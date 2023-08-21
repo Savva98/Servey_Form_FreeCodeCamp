@@ -1,0 +1,115 @@
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 1em;
+    color: black;
+    background-image: linear-gradient(to left, rgba(0, 1, 88, 0.74), rgba(230, 217, 230, 0.9), rgba(248, 112, 33, 0.9));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+header{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+p {
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+#description{
+    margin-top:-8px ;
+}
+form {
+    background-color: rgba(56, 56, 250, 0.301);
+    padding: 1rem 2rem;
+    display: grid;
+    justify-content: center; 
+    min-width: 720px;
+    gap: 8px;
+    border-radius: 6px;
+}
+.container{
+    width: 100%;
+    margin: 0.2rem auto 0 auto;
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+}
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+  }
+  @media (max-width: 660px) {
+    form {
+      padding: 2.5rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      min-width: 500px;
+      gap:5px
+    }
+  }
+  .form-control {
+    display: block;
+    width: 100%;
+    color: rgb(37, 36, 36);
+    border: 1px solid rgba(94, 92, 92, 0.616);
+    border-radius: 0.2rem;
+    height:2em;
+    /* margin: 0 auto 0.1rem auto; */
+  }
+  .form-group {
+    width: 100%;
+  }
+
+  .form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(77, 163, 255, 0.25);
+  }
+  .input-radio, .input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1rem;
+    min-width: 1rem;
+}
+.input-textarea {
+    min-height: 100px;
+    width: 100%;
+    padding: 0.5rem;
+    resize: vertical;
+}
+.submit-button{
+     width: 50%;
+    margin: 0.5rem auto 0 auto;
+    display: grid;
+    justify-content: center;
+    height: 1.8rem;
+    align-items: center;
+    background-color: rgb(46, 167, 214);
+    border: 1px solid rgb(62, 153, 214);
+    border-radius: 8px;
+    cursor: pointer; 
+    
+}
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
